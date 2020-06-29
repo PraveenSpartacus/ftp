@@ -1,0 +1,28 @@
+.layout{
+    margin: 1vh 0;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout p{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.line{
+    /* background-color: #0E43EF; */
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, #6adaf6, #0E43EF);
+}
+
+.mobileCards{
+    /* background-color: turquoise; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
