@@ -228,14 +228,16 @@
     }
     .open-modal span:nth-child(1){
         transform: rotate(45deg);
-        top: 45%;
+        /* top: 45%; */
+        top: 22px;
     }
     .open-modal span:nth-child(2){
         opacity: 0;
     }
     .open-modal span:nth-child(3){
         transform: rotate(-45deg);
-        bottom: 45%;
+        /* bottom: 45%; */
+        bottom: 22px;
     }
 }
 
