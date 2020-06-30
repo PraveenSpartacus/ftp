@@ -2,14 +2,14 @@
     width: 90%;
     margin: 0 auto;
     /* background-color: blanchedalmond; */
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     display: flex;
     position: sticky;
     top: 0;
 }
 
 .cards-container{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin-left: 5%;
     width: 75%;
     /* display: flex; */
@@ -37,11 +37,12 @@
 
 .allcards-container{
     display: none;
-    /* background-color: rgb(138, 96, 89); */
+    /* background-color: rgba(138, 96, 89, 0.144); */
 }
 @media only screen and (max-width: 870px){
     .filter-container{
-        margin-top: 5vh;
+        /* margin-top: 50px; */
+        margin-top: 0;
     }
 }
 

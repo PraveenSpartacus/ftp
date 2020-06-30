@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-evenly;
     /* background-color: blanchedalmond; */
+    margin: 110px 0;
 }
 
 .featured-container a img{
@@ -26,6 +27,7 @@
 @media only screen and (max-width: 500px){
     .featured-container{
         flex-direction: column;
+        margin: 50px 0;
     }
     .featured-container a img{
         margin: 2vh 0;

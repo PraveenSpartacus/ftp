@@ -36,6 +36,7 @@
         flex-direction: column;
         /* padding-top: 0; */
         font-size: clamp(0.75em, 3.4vw, 0.93em);
+        padding-bottom: 1vh;
     }
     .circle{
         display: none;
