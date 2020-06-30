@@ -161,7 +161,7 @@
         background-color: #000000;
          background-color: black; 
         transition: background-color 0.4s; */
-        color: white;
+        color: rgb(221, 221, 221);
         background-color: rgb(37,37,37);
         box-shadow:
         inset 6px 6px 12px rgba(0, 0, 0, 0.7),
