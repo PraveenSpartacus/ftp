@@ -9,6 +9,8 @@
     width: 20%;
     min-height: 560px;
     max-height: 800px;
+    /* position: sticky;
+    top: 100px; */
 }
 .button-container button{
     transition: box-shadow 0.4s;

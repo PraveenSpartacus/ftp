@@ -4,10 +4,13 @@
     /* background-color: blanchedalmond; */
     /* margin-top: 10vh; */
     display: flex;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
+    /* position: relative; */
 }
-
+/* body{
+    overflow-x: hidden;
+} */
 .cards-container{
     /* background-color: rgb(78, 167, 245); */
     margin-left: 5%;
@@ -29,6 +32,7 @@
     height: 100vh;
     min-height: 560px;
     max-height: 800px;
+    
     overflow-y: scroll;
 }
 
