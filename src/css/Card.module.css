@@ -16,7 +16,7 @@
     filter: brightness(1);
 }
 .card-container:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .card-container img{
     height: 25%;
@@ -43,6 +43,9 @@
         width: 31%;
         margin: 2vh 1.16%;
         /* background-color: tomato; */
+    }
+    .card-container img{
+        filter: brightness(1);
     }
     
 }

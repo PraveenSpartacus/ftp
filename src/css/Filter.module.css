@@ -9,17 +9,27 @@
 }
 
 .cards-container{
-    /* background-color: aliceblue; */
+    /* background-color: rgb(78, 167, 245); */
     margin-left: 5%;
     width: 75%;
+    /* border: 3px rgb(77, 77, 77) solid; */
+    background-color: rgb(37,37,37);
+        box-shadow:
+        inset 6px 6px 12px rgba(0, 0, 0, 0.7),
+        inset -6px -6px 12px rgba(255,255,255,0.15);
+    border-radius: 10px;
     /* display: flex; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     /* min-height: 80vh; */
-    min-height: 90vh;
+    /* min-height: 90vh; */
     /* margin-bottom: 5vh; */
+    height: 100vh;
+    min-height: 560px;
+    max-height: 800px;
+    overflow-y: scroll;
 }
 
 /* @media only screen and (max-width: 650px){

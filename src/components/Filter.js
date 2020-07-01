@@ -21,8 +21,8 @@ export class Filter extends Component {
     this.state = {
        cards : this.cards,
        options: {
-          netflix: false,
-          hulu: false,
+          education: false,
+          networks: false,
           hbo: false
        }
     }
@@ -42,31 +42,31 @@ export class Filter extends Component {
   //   option.classList.toggle(style.inset)
   // }
 
-  setNetflix = () =>{
+  setEducation = () =>{
     this.setState({
       options: {
-        netflix: true,
-        hulu: false,
+        education: true,
+        networks: false,
         hbo: false
      }
     })
-    scrollTo("#NETFLIX")
+    scrollTo("#EDUCATION")
   }
-  setHulu = () =>{
+  setNetworks = () =>{
     this.setState({
       options: {
-        netflix: false,
-        hulu: true,
+        education: false,
+        networks: true,
         hbo: false
      }
     })
-    scrollTo("#HULU")
+    scrollTo("#NETWORKS")
   }
   setHbo = () =>{
     this.setState({
       options: {
-        netflix: false,
-        hulu: false,
+        education: false,
+        networks: false,
         hbo: true
      }
     })
@@ -83,113 +83,135 @@ export class Filter extends Component {
   cards = [
     {
        id: 1,
-       title: 'netflix',
-       days: '30'
+       title: 'education',
+       img: 'skillshare',
+       days: 60
     },
     {
       id: 2,
-      title: 'netflix',
-      days: 30
+      title: 'education',
+      img: 'pluralsight',
+      days: 10
     },
     {
       id: 3,
-      title: 'hulu',
-      days: 30
+      title: 'education',
+      img: 'teamtreehouse',
+      days: 7
     },
     {
       id: 4,
-      title: 'hbo',
+      title: 'education',
+      img: 'linkedinlearning',
       days: 30
     },
     {
       id: 5,
-      title: 'hbo',
-      days: 30
+      title: 'education',
+      img: 'creativelive',
+      days: 'cl'
     },
     {
       id: 6,
-      title: 'hulu',
+      title: 'education',
+      img: 'codecademy',
       days: 30
     },
     {
       id: 7,
-      title: 'hulu',
-      days: 30
+      title: 'networks',
+      img: 'shareasale',
+      days: 'sh'
     },
     {
       id: 8,
-      title: 'netflix',
-      days: 30
+      title: 'networks',
+      img: 'impactradius',
+      days: 'im'
    },
    {
      id: 9,
-     title: 'netflix',
-     days: 30
+     title: 'networks',
+     img: 'viglink',
+     days: 'vig'
    },
    {
      id: 10,
-     title: 'hulu',
-     days: 30
+     title: 'networks',
+     img: 'cjaffiliate',
+     days: 'cj'
    },
    {
      id: 11,
      title: 'hbo',
+     img: 'netflix',
      days: 30
    },
    {
      id: 12,
      title: 'hbo',
+     img: 'netflix',
      days: 30
    },
    {
      id: 13,
      title: 'hulu',
+     img: 'netflix',
      days: 30
    },
    {
      id: 14,
      title: 'hulu',
+     img: 'netflix',
      days: 30
    },
    {
     id: 15,
     title: 'netflix',
+    img: 'netflix',
     days: 30
   },
   {
     id: 16,
     title: 'hulu',
+    img: 'netflix',
     days: 30
   },
   {
     id: 17,
     title: 'hbo',
+    img: 'netflix',
     days: 30
   },
   {
     id: 18,
     title: 'hbo',
+    img: 'netflix',
     days: 30
   },
 
   {
     id: 19,
     title: 'netflix',
+    img: 'netflix',
     days: 30
   },
   {
     id: 20,
     title: 'hulu',
+    img: 'netflix',
     days: 30
   },
   {
     id: 21,
     title: 'hbo',
+    img: 'netflix',
     days: 30
   },
   {
     id: 22,
     title: 'hbo',
+    img: 'netflix',
     days: 30
   }
 ]
@@ -239,8 +261,8 @@ export class Filter extends Component {
               <div className={style.modal} ref={this.modalRef}>
                 <div className={style.modalList}>
 
-                <h4 className={`${this.state.options.netflix ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetflix}>Netflix</h4>
-                <h4 className={`${this.state.options.hulu ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setHulu}>Hulu</h4>
+                <h4 className={`${this.state.options.education ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEducation}>Education</h4>
+                <h4 className={`${this.state.options.networks ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetworks}>Networks</h4>
                 <h4 className={`${this.state.options.hbo ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setHbo}>Hbo</h4>
                 
                 

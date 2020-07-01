@@ -1,10 +1,14 @@
 .button-container{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     /* background-color: aliceblue; */
     /* border: rgb(0, 0, 0) 2px solid; */
-    height: fit-content;
+    /* height: fit-content; */
+    height: 100vh;
     width: 20%;
+    min-height: 560px;
+    max-height: 800px;
 }
 .button-container button{
     transition: box-shadow 0.4s;
@@ -21,12 +25,13 @@
 
 .button-container .btn{
     width: 100%;
-    font-size: clamp(0.85em,1.52vw,1.3em);
-    padding: 15px 0px;
-    margin: 1.5vh 0;
+    font-size: clamp(0.75em,1.52vw,1.2em);
+    padding: 12px 0px;
+    padding-left: 10%;
+    /* margin: 1.5vh 0; */
     font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: px;
     background-color: transparent;
     color: #1d1d1d;
     box-shadow:
@@ -35,14 +40,16 @@
     outline: none;
     cursor: pointer;
     transition: box-shadow 0.4s;
+    text-align: left;
 }
 
 .button-container .activeBtn{
     width: 100%;
     /* font-size: 1.0em; */
-    font-size: clamp(0.85em,1.52vw,1.3em);
-    padding: 15px 0px;
-    margin: 1.5vh 0;
+    font-size: clamp(0.78em,1.52vw,1.2em);
+    padding: 12px 0px;
+    padding-left: 10%;
+    /* margin: 1.5vh 0; */
     font-weight: 600;
     border: none;
     border-radius: 5px;
@@ -54,7 +61,7 @@
     outline: none;
     cursor: pointer;
     transition: box-shadow 0.4s;
-
+    text-align: left;
 }
 
 

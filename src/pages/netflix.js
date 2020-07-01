@@ -24,7 +24,7 @@ const netflix = () =>{
                 <h3>
                 Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.
                 </h3>
-                <button>Get the Offer</button>
+                <a href="/"><button>Get the Offer</button></a>
                 <h2>
                     Related Services
                 </h2>

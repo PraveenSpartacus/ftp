@@ -8,9 +8,16 @@ export class Buttons extends Component {
         this.state = {
             active : {
                 all : true,
-                netflix : false,
-                hulu : false,
-                hotstar : false
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
             }
         }
 
@@ -21,49 +28,210 @@ export class Buttons extends Component {
         this.setState({
             active : {
                 all : true,
-                netflix : false,
-                hulu : false,
-                hotstar : false
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
             }
         })
         this.props.filterCards('all');
     }
 
-    setNetflix = () => {
+    setEducation = () => {
         this.setState({
             active : {
                 all : false,
-                netflix : true,
-                hulu : false,
-                hotstar : false
+                education : true,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
             }
         });
-        this.props.filterCards('netflix');
+        this.props.filterCards('education');
         
     }
 
-    setHulu = () =>{
+    setNetworks = () =>{
         this.setState({
             active : {
                 all : false,
-                netflix : false,
-                hulu : true,
-                hotstar : false
+                education : false,
+                networks : true,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
             }
         })
-        this.props.filterCards('hulu');
+        this.props.filterCards('networks');
     }
 
-    setHbo = () =>{
+    setProductivity = () =>{
         this.setState({
             active : {
                 all : false,
-                netflix : false,
-                hulu : false,
-                hotstar : true
+                education : false,
+                networks : false,
+                productivity : true,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
             }
         })
-        this.props.filterCards('hbo');
+        this.props.filterCards('productivity');
+    }
+
+    setEntertainment = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : true,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
+            }
+        })
+        this.props.filterCards('entertainment');
+    }
+
+    setDesign = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : true,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
+            }
+        })
+        this.props.filterCards('design');
+    }
+
+    setBooks = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : true,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : false
+            }
+        })
+        this.props.filterCards('books');
+    }
+
+    setApps = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : true,
+                marketing : false,
+                music : false,
+                email : false
+            }
+        })
+        this.props.filterCards('apps');
+    }
+
+    setMarketing = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : true,
+                music : false,
+                email : false
+            }
+        })
+        this.props.filterCards('marketing');
+    }
+
+    setMusic = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : true,
+                email : false
+            }
+        })
+        this.props.filterCards('music');
+    }
+
+    setEmail = () =>{
+        this.setState({
+            active : {
+                all : false,
+                education : false,
+                networks : false,
+                productivity : false,
+                entertainment : false,
+                design : false,
+                books : false,
+                apps : false,
+                marketing : false,
+                music : false,
+                email : true
+            }
+        })
+        this.props.filterCards('email');
     }
 
 
@@ -88,14 +256,35 @@ export class Buttons extends Component {
                 <button className={this.state.active.all ? style.activeBtn : style.btn} onClick={this.setAll}>
                     ALL
                 </button>
-                <button className={this.state.active.netflix ? style.activeBtn : style.btn} onClick={this.setNetflix}>
+                <button className={this.state.active.education ? style.activeBtn : style.btn} onClick={this.setEducation}>
+                    EDUCATION
+                </button>
+                <button className={this.state.active.networks ? style.activeBtn : style.btn} onClick={this.setNetworks}>
+                    BUSSINESS
+                </button>
+                <button className={this.state.active.productivity ? style.activeBtn : style.btn} onClick={this.setProductivity}>
                     PRODUCTIVITY
                 </button>
-                <button className={this.state.active.hulu ? style.activeBtn : style.btn} onClick={this.setHulu}>
-                    HULU
+                <button className={this.state.active.entertainment ? style.activeBtn : style.btn} onClick={this.setEntertainment}>
+                    ENTERTAINMENT
                 </button>
-                <button className={this.state.active.hotstar ? style.activeBtn : style.btn} onClick={this.setHbo}>
-                    HBO
+                <button className={this.state.active.design ? style.activeBtn : style.btn} onClick={this.setDesign}>
+                    DESIGN
+                </button>
+                <button className={this.state.active.books ? style.activeBtn : style.btn} onClick={this.setBooks}>
+                    BOOKS
+                </button>
+                <button className={this.state.active.apps ? style.activeBtn : style.btn} onClick={this.setApps}>
+                    APPS
+                </button>
+                <button className={this.state.active.marketing ? style.activeBtn : style.btn} onClick={this.setMarketing}>
+                    MARKETING
+                </button>
+                <button className={this.state.active.music ? style.activeBtn : style.btn} onClick={this.setMusic}>
+                    MUSIC
+                </button>
+                <button className={this.state.active.email ? style.activeBtn : style.btn} onClick={this.setEmail}>
+                    EMAIL
                 </button>
             </div>
         )

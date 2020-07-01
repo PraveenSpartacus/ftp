@@ -4,18 +4,18 @@ import MobileLayout from './MobileLayout'
 
 const AllCards = (props) =>{
     //let x = props.Cards
-    let netflixCards = props.Cards.filter(
+    let educationCards = props.Cards.filter(
         (card) =>{
-            if(card.title === 'netflix')
+            if(card.title === 'education')
                 return true
             else
                 return false    
         }
     )
 
-    let huluCards = props.Cards.filter(
+    let networksCards = props.Cards.filter(
         (card) =>{
-            if(card.title === 'hulu')
+            if(card.title === 'networks')
                 return true
             else
                 return false    
@@ -37,8 +37,8 @@ const AllCards = (props) =>{
 
     return(
         <div style={w90}>
-            <MobileLayout cards={netflixCards} title='NETFLIX'></MobileLayout>
-            <MobileLayout cards={huluCards} title='HULU'></MobileLayout>
+            <MobileLayout cards={educationCards} title='EDUCATION'></MobileLayout>
+            <MobileLayout cards={networksCards} title='NETWORKS'></MobileLayout>
             <MobileLayout cards={hboCards} title='HBO'></MobileLayout>
         </div>
     )
