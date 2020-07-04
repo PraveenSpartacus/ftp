@@ -16,11 +16,11 @@
     margin-left: 5%;
     width: 75%;
     /* border: 3px rgb(77, 77, 77) solid; */
-    background-color: rgb(37,37,37);
+    /* background-color: rgb(37,37,37);
         box-shadow:
         inset 6px 6px 12px rgba(0, 0, 0, 0.7),
         inset -6px -6px 12px rgba(255,255,255,0.15);
-    border-radius: 10px;
+    border-radius: 10px; */
     /* display: flex; */
     display: flex;
     flex-direction: row;
@@ -29,11 +29,11 @@
     /* min-height: 80vh; */
     /* min-height: 90vh; */
     /* margin-bottom: 5vh; */
-    height: 100vh;
-    min-height: 560px;
-    max-height: 800px;
+    height: fit-content;
+    /* min-height: 560px; */
+    /* max-height: 800px; */
     
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 /* @media only screen and (max-width: 650px){
@@ -71,13 +71,19 @@
 
 @media only screen and (max-width: 650px){
     .cards-container{
-        display: none;
+        width: 100%;
+        /* background-color: #000000; */
+        margin-left: 0;
     }
-    .allcards-container{
+    /* .allcards-container{
         display: flex;
         justify-content: center;
-        /* background-color: thistle; */
+        /* background-color: thistle; 
         width: 100%;
+    } */
+
+    .allcards-container{
+        display: block;
     }
     .modal-container{
         /* background-color: wheat; */

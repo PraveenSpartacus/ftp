@@ -7,7 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    `gatsby-plugin-transition-link`,
+    //`gatsby-plugin-transition-link`,
+    `gatsby-plugin-page-transitions`,
     `gatsby-plugin-smoothscroll`
   ],
 }

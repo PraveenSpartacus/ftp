@@ -1,7 +1,4 @@
-var plugins = [{
-      plugin: require('/Users/francis/Desktop/ftp/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = []
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

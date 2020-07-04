@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import style from '../css/Buttons.module.css'
+import scrollTo from 'gatsby-plugin-smoothscroll'
+
 
 export class Buttons extends Component {
     constructor(props) {
@@ -59,7 +61,8 @@ export class Buttons extends Component {
                 email : false
             }
         });
-        this.props.filterCards('education');
+        //this.props.filterCards('education');
+        scrollTo('#EDUCATION')
         
     }
 
@@ -79,7 +82,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('networks');
+        //this.props.filterCards('networks');
+        scrollTo('#NETWORKS')
     }
 
     setProductivity = () =>{
@@ -98,7 +102,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('productivity');
+        //this.props.filterCards('productivity');
+        scrollTo('#PRODUCTIVITY')
     }
 
     setEntertainment = () =>{
@@ -117,7 +122,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('entertainment');
+        //this.props.filterCards('entertainment');
+        scrollTo('#ENTERTAINMENT')
     }
 
     setDesign = () =>{
@@ -136,7 +142,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('design');
+        //this.props.filterCards('design');
+        scrollTo('#DESIGN')
     }
 
     setBooks = () =>{
@@ -155,7 +162,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('books');
+        //this.props.filterCards('books');
+        scrollTo('#BOOKS')
     }
 
     setApps = () =>{
@@ -174,7 +182,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('apps');
+        //this.props.filterCards('apps');
+        scrollTo('#APPS')
     }
 
     setMarketing = () =>{
@@ -193,7 +202,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('marketing');
+        //this.props.filterCards('marketing');
+        scrollTo('#MARKETING')
     }
 
     setMusic = () =>{
@@ -212,7 +222,8 @@ export class Buttons extends Component {
                 email : false
             }
         })
-        this.props.filterCards('music');
+        //this.props.filterCards('music');
+        scrollTo('#MUSIC')
     }
 
     setEmail = () =>{
@@ -231,7 +242,8 @@ export class Buttons extends Component {
                 email : true
             }
         })
-        this.props.filterCards('email');
+        //this.props.filterCards('email');
+        scrollTo('#EMAIL')
     }
 
 
@@ -253,9 +265,9 @@ export class Buttons extends Component {
                     <input type="submit" value="HOTSTAR" onClick={this.props.filterCards.bind(this,'hotstar')}/> 
                 </div> */}
 
-                <button className={this.state.active.all ? style.activeBtn : style.btn} onClick={this.setAll}>
+                {/* <button className={this.state.active.all ? style.activeBtn : style.btn} onClick={this.setAll}>
                     ALL
-                </button>
+                </button> */}
                 <button className={this.state.active.education ? style.activeBtn : style.btn} onClick={this.setEducation}>
                     EDUCATION
                 </button>

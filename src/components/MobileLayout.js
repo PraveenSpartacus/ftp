@@ -5,7 +5,7 @@ import style from '../css/MobileLayout.module.css'
 const MobileLayout = (props) =>{
     return(
         <div className={style.layout}>
-            <p id={props.title}>{props.title}</p>
+            <p className={style.title} id={props.title}>{props.title}</p>
             <div className={style.line}></div>
             <div className={style.mobileCards}>
                 <Cards Cards={props.cards}></Cards>

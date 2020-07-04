@@ -23,7 +23,7 @@ export class Filter extends Component {
        options: {
           education: false,
           networks: false,
-          hbo: false
+          email: false
        }
     }
   }
@@ -47,7 +47,7 @@ export class Filter extends Component {
       options: {
         education: true,
         networks: false,
-        hbo: false
+        email: false
      }
     })
     scrollTo("#EDUCATION")
@@ -57,182 +57,25 @@ export class Filter extends Component {
       options: {
         education: false,
         networks: true,
-        hbo: false
+        email: false
      }
     })
     scrollTo("#NETWORKS")
   }
-  setHbo = () =>{
+  setEmail = () =>{
     this.setState({
       options: {
         education: false,
         networks: false,
-        hbo: true
+        email: true
      }
     })
-    scrollTo("#HBO")
+    scrollTo("#EMAIL")
   }
 
-  cardsXX = [
-    {
-      id: 1,
-      title: 'netflix',
-   }
-  ]
-
-  cards = [
-    {
-       id: 1,
-       title: 'education',
-       img: 'skillshare',
-       days: 60
-    },
-    {
-      id: 2,
-      title: 'education',
-      img: 'pluralsight',
-      days: 10
-    },
-    {
-      id: 3,
-      title: 'education',
-      img: 'teamtreehouse',
-      days: 7
-    },
-    {
-      id: 4,
-      title: 'education',
-      img: 'linkedinlearning',
-      days: 30
-    },
-    {
-      id: 5,
-      title: 'education',
-      img: 'creativelive',
-      days: 'cl'
-    },
-    {
-      id: 6,
-      title: 'education',
-      img: 'codecademy',
-      days: 30
-    },
-    {
-      id: 7,
-      title: 'networks',
-      img: 'shareasale',
-      days: 'sh'
-    },
-    {
-      id: 8,
-      title: 'networks',
-      img: 'impactradius',
-      days: 'im'
-   },
-   {
-     id: 9,
-     title: 'networks',
-     img: 'viglink',
-     days: 'vig'
-   },
-   {
-     id: 10,
-     title: 'networks',
-     img: 'cjaffiliate',
-     days: 'cj'
-   },
-   {
-     id: 11,
-     title: 'hbo',
-     img: 'netflix',
-     days: 30
-   },
-   {
-     id: 12,
-     title: 'hbo',
-     img: 'netflix',
-     days: 30
-   },
-   {
-     id: 13,
-     title: 'hulu',
-     img: 'netflix',
-     days: 30
-   },
-   {
-     id: 14,
-     title: 'hulu',
-     img: 'netflix',
-     days: 30
-   },
-   {
-    id: 15,
-    title: 'netflix',
-    img: 'netflix',
-    days: 30
-  },
-  {
-    id: 16,
-    title: 'hulu',
-    img: 'netflix',
-    days: 30
-  },
-  {
-    id: 17,
-    title: 'hbo',
-    img: 'netflix',
-    days: 30
-  },
-  {
-    id: 18,
-    title: 'hbo',
-    img: 'netflix',
-    days: 30
-  },
-
-  {
-    id: 19,
-    title: 'netflix',
-    img: 'netflix',
-    days: 30
-  },
-  {
-    id: 20,
-    title: 'hulu',
-    img: 'netflix',
-    days: 30
-  },
-  {
-    id: 21,
-    title: 'hbo',
-    img: 'netflix',
-    days: 30
-  },
-  {
-    id: 22,
-    title: 'hbo',
-    img: 'netflix',
-    days: 30
-  }
-]
   
-  filterCards = (b) => {
-    if(b === "all"){
-      this.setState({
-        cards: this.cards
-      })
-    }
-    else{
-      this.setState({
-        cards: this.cards.filter((card) => {
-          if(card.title === b)
-            return true
-          else
-            return false
-        })
-      })
-    }
-  }
+  
+  
 
   render() {
     
@@ -254,7 +97,7 @@ export class Filter extends Component {
       <div className={style.filterContainer} id="filter">
         <Buttons filterCards={this.filterCards}/>
         <div className={style.cardsContainer}>
-          <Cards  Cards={this.state.cards}/>
+          <AllCards  Cards={this.state.cards}/>
         </div>
         <div className={style.allcardsContainer}>
           <div className={style.modalContainer}>
@@ -263,7 +106,7 @@ export class Filter extends Component {
 
                 <h4 className={`${this.state.options.education ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEducation}>Education</h4>
                 <h4 className={`${this.state.options.networks ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetworks}>Networks</h4>
-                <h4 className={`${this.state.options.hbo ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setHbo}>Hbo</h4>
+                <h4 className={`${this.state.options.hbo ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEmail}>Email</h4>
                 
                 
                 </div>
@@ -277,7 +120,7 @@ export class Filter extends Component {
                   <span></span>
               </div>
           </div>
-          <AllCards Cards={this.state.cards}></AllCards>
+          {/* <AllCards Cards={this.state.cards}></AllCards> */}
         </div>
 
       </div>
