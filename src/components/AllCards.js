@@ -129,6 +129,133 @@ const AllCards = (props) =>{
          },
     ]
 
+    let dummyCards1 = [
+        {
+            id: 11,
+            title: 'dummy',
+            img: 'netflix',
+            days: "∞"
+          },
+          {
+            id: 12,
+            title: 'dummy',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 13,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 14,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+           id: 15,
+           title: 'email',
+           img: 'netflix',
+           days: 30
+         },
+         {
+            id: 16,
+            title: 'email',
+            img: 'netflix',
+            days: "∞"
+          },
+          {
+            id: 17,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 18,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 19,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+           id: 20,
+           title: 'email',
+           img: 'netflix',
+           days: 30
+         },
+         {
+            id: 21,
+            title: 'email',
+            img: 'netflix',
+            days: "∞"
+          },
+          {
+            id: 22,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 23,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 24,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+           id: 25,
+           title: 'email',
+           img: 'netflix',
+           days: 30
+         },
+         {
+            id: 26,
+            title: 'email',
+            img: 'netflix',
+            days: "∞"
+          },
+          {
+            id: 27,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 28,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+            id: 29,
+            title: 'email',
+            img: 'netflix',
+            days: 30
+          },
+          {
+           id: 30,
+           title: 'email',
+           img: 'netflix',
+           days: 30
+         },
+         
+    ]
+
+    let dummyCards = dummyCards1.slice(0,10)
+    let dummyCards2 = dummyCards1.slice(0,7)
+
     let w90 = {
         width: '100%'
     }
@@ -138,6 +265,9 @@ const AllCards = (props) =>{
             <MobileLayout cards={educationCards} title='EDUCATION'></MobileLayout>
             <MobileLayout cards={networksCards} title='NETWORKS'></MobileLayout>
             <MobileLayout cards={emailCards} title='EMAIL'></MobileLayout>
+            <MobileLayout cards={dummyCards2} title='dummy'></MobileLayout>
+            <MobileLayout cards={dummyCards} title='dummy'></MobileLayout>
+            <MobileLayout cards={dummyCards1} title='dummy'></MobileLayout>
         </div>
     )
 }
