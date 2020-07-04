@@ -358,9 +358,9 @@ const AllCards = (props) =>{
             <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout>
 
             <MobileLayout cards={emailCards} title='EMAIL'></MobileLayout>
-            <MobileLayout cards={dummyCards2} title='dummy'></MobileLayout>
+            {/* <MobileLayout cards={dummyCards2} title='dummy'></MobileLayout>
             <MobileLayout cards={dummyCards} title='dummy'></MobileLayout>
-            <MobileLayout cards={dummyCards1} title='dummy'></MobileLayout>
+            <MobileLayout cards={dummyCards1} title='dummy'></MobileLayout> */}
         </div>
     )
 }
