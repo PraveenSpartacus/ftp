@@ -23,7 +23,14 @@ export class Filter extends Component {
        options: {
           education: false,
           networks: false,
-          email: false
+          email: false,
+          productivity: false,
+          entertainment: false,
+          design: false,
+          books: false,
+          apps: false,
+          marketing: false,
+          music: false,
        }
     }
   }
@@ -47,7 +54,14 @@ export class Filter extends Component {
       options: {
         education: true,
         networks: false,
-        email: false
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: false,
      }
     })
     scrollTo("#EDUCATION")
@@ -57,7 +71,14 @@ export class Filter extends Component {
       options: {
         education: false,
         networks: true,
-        email: false
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: false,
      }
     })
     scrollTo("#NETWORKS")
@@ -67,10 +88,143 @@ export class Filter extends Component {
       options: {
         education: false,
         networks: false,
-        email: true
+        email: true,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: false,
      }
     })
     scrollTo("#EMAIL")
+  }
+
+  setProductivity = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: true,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: false,
+     }
+    })
+    scrollTo("#PRODUCTIVITY")
+  }
+
+  setEntertainment = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: false,
+        entertainment: true,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: false,
+     }
+    })
+    scrollTo("#ENTERTAINMENT")
+  }
+
+  setDesign = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: true,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: false,
+     }
+    })
+    scrollTo("#DESIGN")
+  }
+
+  setBooks = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: true,
+        apps: false,
+        marketing: false,
+        music: false,
+     }
+    })
+    scrollTo("#BOOKS")
+  }
+
+  setApps = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: true,
+        marketing: false,
+        music: false,
+     }
+    })
+    scrollTo("#APPS")
+  }
+
+  setMarketing = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: true,
+        music: false,
+     }
+    })
+    scrollTo("#MARKETING")
+  }
+
+  setMusic = () =>{
+    this.setState({
+      options: {
+        education: false,
+        networks: false,
+        email: false,
+        productivity: false,
+        entertainment: false,
+        design: false,
+        books: false,
+        apps: false,
+        marketing: false,
+        music: true,
+     }
+    })
+    scrollTo("#MUSIC")
   }
 
   
@@ -107,7 +261,15 @@ export class Filter extends Component {
                 <h4 className={`${this.state.options.education ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEducation}>Education</h4>
                 <h4 className={`${this.state.options.networks ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetworks}>Networks</h4>
                 <h4 className={`${this.state.options.email ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEmail}>Email</h4>
-                
+                <h4 className={`${this.state.options.productivity ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setProductivity}>Productivity</h4>
+                <h4 className={`${this.state.options.entertainment ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEntertainment}>Entertainment</h4>
+                <h4 className={`${this.state.options.design ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setDesign}>Design</h4>
+                <h4 className={`${this.state.options.books ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setBooks}>Books</h4>
+                <h4 className={`${this.state.options.apps ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setApps}>Apps</h4>
+                <h4 className={`${this.state.options.marketing ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setMarketing}>Marketing</h4>
+                <h4 className={`${this.state.options.music ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setMusic}>Music</h4>
+
+
                 
                 </div>
                 <img src={arrow}></img>

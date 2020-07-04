@@ -17,25 +17,25 @@ const AllCards = (props) =>{
         id: 1,
         title: 'education',
         img: 'skillshare',
-        days: 60
+        days: '60 days'
      },
      {
        id: 2,
        title: 'education',
        img: 'pluralsight',
-       days: 10
+       days: "10 days"
      },
      {
        id: 3,
        title: 'education',
        img: 'teamtreehouse',
-       days: 7
+       days: "7 days"
      },
      {
        id: 4,
        title: 'education',
        img: 'linkedinlearning',
-       days: 30
+       days: '30 days'
      },
      {
        id: 5,
@@ -47,7 +47,7 @@ const AllCards = (props) =>{
        id: 6,
        title: 'education',
        img: 'codecademy',
-       days: 30
+       days: '30 days'
      }
     ]
 
@@ -101,31 +101,31 @@ const AllCards = (props) =>{
             id: 11,
             title: 'email',
             img: 'sendinblue',
-            days: "∞"
+            days: "na"
           },
           {
             id: 12,
             title: 'email',
             img: 'constantcontact',
-            days: 30
+            days: '30 days'
           },
           {
             id: 13,
             title: 'email',
             img: 'benchmark',
-            days: 30
+            days: '30 days'
           },
           {
             id: 14,
             title: 'email',
             img: 'activecampaign',
-            days: 30
+            days: '30 days'
           },
           {
            id: 15,
            title: 'email',
            img: 'mailchimp',
-           days: 30
+           days: '30 days'
          },
     ]
 
@@ -253,6 +253,96 @@ const AllCards = (props) =>{
          
     ]
 
+    let productivityCards = [
+        {
+            id: 1,
+            title: 'productivity',
+            img: 'wrike',
+            days: '14 days'
+          },
+          {
+            id: 2,
+            title: 'productivity',
+            img: 'todoist',
+            days: 'na'
+          },
+          {
+            id: 3,
+            title: 'productivity',
+            img: 'basecamp',
+            days: '30 days'
+          },
+          {
+            id: 4,
+            title: 'productivity',
+            img: 'asana',
+            days: 'na'
+          },
+          {
+            id: 5,
+            title: 'productivity',
+            img: 'monday',
+            days: 'na'
+          },
+          {
+            id: 6,
+            title: 'productivity',
+            img: 'clickup',
+            days: 'na'
+          },
+          {
+            id: 7,
+            title: 'productivity',
+            img: 'trello',
+            days: 'na'
+          },
+          {
+            id: 8,
+            title: 'productivity',
+            img: 'ganttpro',
+            days: '14 days'
+          },
+          {
+            id: 9,
+            title: 'productivity',
+            img: 'ntask',
+            days: '14 days'
+          },
+          {
+            id: 10,
+            title: 'productivity',
+            img: 'office365',
+            days: '30 days'
+          },
+    ]
+
+    let musicCards = [
+        {
+            id: 1,
+            title: 'music',
+            img: 'applemusic',
+            days: '90 days'
+        },
+        {
+            id: 2,
+            title: 'music',
+            img: 'spotify',
+            days: '30 days'
+        },
+        {
+            id: 3,
+            title: 'music',
+            img: 'tidal',
+            days: '30 days'
+        },
+        {
+            id: 3,
+            title: 'music',
+            img: 'amazonmusic',
+            days: '30 days'
+        },
+    ]
+
     let dummyCards = dummyCards1.slice(0,10)
     let dummyCards2 = dummyCards1.slice(0,7)
 
@@ -264,6 +354,9 @@ const AllCards = (props) =>{
         <div style={w90}>
             <MobileLayout cards={educationCards} title='EDUCATION'></MobileLayout>
             <MobileLayout cards={networksCards} title='NETWORKS'></MobileLayout>
+            <MobileLayout cards={productivityCards} title='PRODUCTIVITY'></MobileLayout>
+            <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout>
+
             <MobileLayout cards={emailCards} title='EMAIL'></MobileLayout>
             <MobileLayout cards={dummyCards2} title='dummy'></MobileLayout>
             <MobileLayout cards={dummyCards} title='dummy'></MobileLayout>

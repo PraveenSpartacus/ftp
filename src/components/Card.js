@@ -11,7 +11,7 @@ function Card(props) {
            <Link className={style.cardContainer} to={'/'+props.card.img}>
                 <img src={require(`../images/${props.card.img}.svg`)} alt={props.card.img}></img>
                 <p className={style.days}>
-                    {props.card.days} days
+                    {props.card.days} 
                 </p>
             </Link>
            
