@@ -106,7 +106,7 @@ export class Filter extends Component {
 
                 <h4 className={`${this.state.options.education ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEducation}>Education</h4>
                 <h4 className={`${this.state.options.networks ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetworks}>Networks</h4>
-                <h4 className={`${this.state.options.hbo ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEmail}>Email</h4>
+                <h4 className={`${this.state.options.email ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEmail}>Email</h4>
                 
                 
                 </div>

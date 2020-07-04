@@ -9,7 +9,7 @@ export class Buttons extends Component {
     
         this.state = {
             active : {
-                all : true,
+                all : false,
                 education : false,
                 networks : false,
                 productivity : false,
@@ -26,24 +26,7 @@ export class Buttons extends Component {
         
     }
     
-    setAll = () =>{
-        this.setState({
-            active : {
-                all : true,
-                education : false,
-                networks : false,
-                productivity : false,
-                entertainment : false,
-                design : false,
-                books : false,
-                apps : false,
-                marketing : false,
-                music : false,
-                email : false
-            }
-        })
-        this.props.filterCards('all');
-    }
+    
 
     setEducation = () => {
         this.setState({
