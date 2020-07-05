@@ -13,6 +13,8 @@ import prime from '../images/prime.svg'
 import hulu from '../images/hulu.svg'
 import hbo from '../images/hbo.svg'
 
+let link = 'https://www.skillshare.com/'
+
 const productPage = () =>{
     return(
         <PageTransition
@@ -40,7 +42,7 @@ const productPage = () =>{
                 </h4>
                 <h3>
                 Explore your creativity with classes in illustration, photography, design, and more.                </h3>
-                <a href="/"><button>Get the Offer</button></a>
+                <a href={link} target="_blank"><button>Get the Offer</button></a>
                 <h2>
                     Related Services
                 </h2>

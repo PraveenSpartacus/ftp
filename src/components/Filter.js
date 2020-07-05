@@ -251,7 +251,7 @@ export class Filter extends Component {
       <div className={style.filterContainer} id="filter">
         <Buttons filterCards={this.filterCards}/>
         <div className={style.cardsContainer}>
-          <AllCards  Cards={this.state.cards}/>
+          <AllCards/>
         </div>
         <div className={style.allcardsContainer}>
           <div className={style.modalContainer}>

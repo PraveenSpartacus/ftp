@@ -13,6 +13,9 @@ import prime from '../images/prime.svg'
 import hulu from '../images/hulu.svg'
 import hbo from '../images/hbo.svg'
 
+let link = 'https://www.udemy.com/'
+
+
 const productPage = () =>{
     return(
         <PageTransition
@@ -41,7 +44,7 @@ const productPage = () =>{
                 <h3>
                 Crush your 2020 goals and keep moving forward with Wrike's work management platform.          
                 </h3>
-                <a href="/"><button>Get the Offer</button></a>
+                <a href={link} target="_blank"><button>Get the Offer</button></a>
                 <h2>
                     Related Services
                 </h2>

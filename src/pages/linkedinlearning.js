@@ -13,6 +13,9 @@ import prime from '../images/prime.svg'
 import hulu from '../images/hulu.svg'
 import hbo from '../images/hbo.svg'
 
+let link = 'https://www.linkedin.com/learning/'
+
+
 const productPage = () =>{
     return(
         <PageTransition
@@ -39,10 +42,10 @@ const productPage = () =>{
                 Offer - 30 Day Free Trial
                 </h4>
                 <h3>
-                Keep learning in the moments that matter.
+                
                 Learn in-demand skills with over 14,000+ online courses taught by real-world professionals.                
                 </h3>
-                <a href="/"><button>Get the Offer</button></a>
+                <a href={link} target="_blank"><button>Get the Offer</button></a>
 
                 <h2>
                     Related Services

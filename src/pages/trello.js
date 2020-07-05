@@ -13,6 +13,9 @@ import prime from '../images/prime.svg'
 import hulu from '../images/hulu.svg'
 import hbo from '../images/hbo.svg'
 
+let link = 'https://www.udemy.com/'
+
+
 const productPage = () =>{
     return(
         <PageTransition
@@ -42,7 +45,7 @@ const productPage = () =>{
                 Trusted by millions, Trello powers teams all around the world.
 
                 </h3>
-                <a href="/"><button>Get the Offer</button></a>
+                <a href={link} target="_blank"><button>Get the Offer</button></a>
                 <h2>
                     Related Services
                 </h2>

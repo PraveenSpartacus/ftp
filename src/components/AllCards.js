@@ -2,7 +2,7 @@ import React from 'react'
 //import Card from './Card'
 import MobileLayout from './MobileLayout'
 
-const AllCards = (props) =>{
+const AllCards = () =>{
     //let x = props.Cards
     // let educationCards = props.Cards.filter(
     //     (card) =>{
@@ -40,15 +40,81 @@ const AllCards = (props) =>{
      {
        id: 5,
        title: 'education',
-       img: 'creativelive',
-       days: 'cl'
+       img: 'quickstart',
+       days: '7 days'
      },
      {
        id: 6,
        title: 'education',
        img: 'codecademy',
        days: '30 days'
-     }
+     },
+     {
+        id: 7,
+        title: 'education',
+        img: 'udemy',
+        days: '14 days'
+      },
+      {
+        id: 8,
+        title: 'education',
+        img: 'brilliant',
+        days: '7 days'
+      },
+      {
+        id: 14,
+        title: 'education',
+        img: 'thegreatcoursesplus',
+        days: '14 days'
+      },
+      {
+        id: 9,
+        title: 'education',
+        img: 'coursera',
+        days: '7 days'
+      },
+      {
+        id: 15,
+        title: 'education',
+        img: 'cbtnuggets',
+        days: '7 days'
+      },
+      {
+        id: 10,
+        title: 'education',
+        img: 'itprotv',
+        days: '7 days'
+      },
+      {
+        id: 11,
+        title: 'education',
+        img: 'acloudguru',
+        days: '7 days'
+      },
+      {
+        id: 12,
+        title: 'education',
+        img: 'onemonth',
+        days: '3 days'
+      },
+      {
+        id: 13,
+        title: 'education',
+        img: 'learnforbes',
+        days: '14 days'
+      },
+      {
+        id: 16,
+        title: 'education',
+        img: 'creativelive',
+        days: 'na'
+      },
+      {
+        id: 17,
+        title: 'education',
+        img: 'linuxacademy',
+        days: '7 days'
+      },
     ]
 
     // let networksCards = props.Cards.filter(
@@ -84,7 +150,25 @@ const AllCards = (props) =>{
            title: 'networks',
            img: 'cjaffiliate',
            days: 'cj'
-         }
+         },
+         {
+          id: 11,
+          title: 'networks',
+          img: 'freshbooks',
+          days: '30 days'
+        },
+        {
+          id: 12,
+          title: 'networks',
+          img: 'quickbooks',
+          days: '30 days'
+        },
+        {
+          id: 13,
+          title: 'networks',
+          img: 'zoho',
+          days: '14 days'
+        }
     ]
 
     // let emailCards = props.Cards.filter(
@@ -129,129 +213,6 @@ const AllCards = (props) =>{
          },
     ]
 
-    let dummyCards1 = [
-        {
-            id: 11,
-            title: 'dummy',
-            img: 'netflix',
-            days: "∞"
-          },
-          {
-            id: 12,
-            title: 'dummy',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 13,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 14,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-           id: 15,
-           title: 'email',
-           img: 'netflix',
-           days: 30
-         },
-         {
-            id: 16,
-            title: 'email',
-            img: 'netflix',
-            days: "∞"
-          },
-          {
-            id: 17,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 18,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 19,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-           id: 20,
-           title: 'email',
-           img: 'netflix',
-           days: 30
-         },
-         {
-            id: 21,
-            title: 'email',
-            img: 'netflix',
-            days: "∞"
-          },
-          {
-            id: 22,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 23,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 24,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-           id: 25,
-           title: 'email',
-           img: 'netflix',
-           days: 30
-         },
-         {
-            id: 26,
-            title: 'email',
-            img: 'netflix',
-            days: "∞"
-          },
-          {
-            id: 27,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 28,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-            id: 29,
-            title: 'email',
-            img: 'netflix',
-            days: 30
-          },
-          {
-           id: 30,
-           title: 'email',
-           img: 'netflix',
-           days: 30
-         },
-         
-    ]
 
     let productivityCards = [
         {
@@ -336,15 +297,111 @@ const AllCards = (props) =>{
             days: '30 days'
         },
         {
-            id: 3,
+            id: 4,
             title: 'music',
             img: 'amazonmusic',
             days: '30 days'
         },
     ]
 
-    let dummyCards = dummyCards1.slice(0,10)
-    let dummyCards2 = dummyCards1.slice(0,7)
+    let entertainmentCards = [
+        {
+            id: 1,
+            title: 'entertainment',
+            img: 'philo',
+            days: '7 days'
+        },
+        {
+            id: 2,
+            title: 'entertainment',
+            img: 'netflix',
+            days: '30 days'
+        },
+        {
+            id: 3,
+            title: 'entertainment',
+            img: 'prime',
+            days: '30 days'
+        },
+        {
+            id: 4,
+            title: 'entertainment',
+            img: 'hulu',
+            days: '30 days'
+        },
+        {
+            id: 5,
+            title: 'entertainment',
+            img: 'hbo',
+            days: '7 days'
+        },
+        {
+            id: 6,
+            title: 'entertainment',
+            img: 'cbs',
+            days: '7 days'
+        },
+        {
+          id: 7,
+          title: 'entertainment',
+          img: 'curiositystream',
+          days: '7 days'
+      },
+      {
+        id: 8,
+        title: 'entertainment',
+        img: 'crunchyroll',
+        days: '14 days'
+    },
+    ]
+
+    let booksCards = [
+        {
+            id: 1,
+            title: 'books',
+            img: 'audiobooks',
+            days: '30 days'
+        },
+        {
+            id: 2,
+            title: 'books',
+            img: 'playster',
+            days: '30 days'
+        },
+        {
+            id: 3,
+            title: 'books',
+            img: 'scribd',
+            days: '30 days'
+        },
+        {
+            id: 4,
+            title: 'books',
+            img: 'kobo',
+            days: '30 days'
+        },
+        {
+          id: 5,
+          title: 'books',
+          img: 'audible',
+          days: '30 days'
+        },
+        {
+        id: 6,
+        title: 'books',
+        img: 'amazonkindle',
+        days: '30 days'
+        },
+        {
+          id: 7,
+          title: 'books',
+          img: 'blinkist',
+          days: '7 days'
+        },
+    ]
+
+    //let dummyCards = dummyCards1.slice(0,10)
+    //let dummyCards2 = dummyCards1.slice(0,7)
 
     let w90 = {
         width: '100%'
@@ -356,6 +413,9 @@ const AllCards = (props) =>{
             <MobileLayout cards={networksCards} title='NETWORKS'></MobileLayout>
             <MobileLayout cards={productivityCards} title='PRODUCTIVITY'></MobileLayout>
             <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout>
+            <MobileLayout cards={entertainmentCards} title='ENTERTAINMENT'></MobileLayout>
+            <MobileLayout cards={booksCards} title='BOOKS'></MobileLayout>
+
 
             <MobileLayout cards={emailCards} title='EMAIL'></MobileLayout>
             {/* <MobileLayout cards={dummyCards2} title='dummy'></MobileLayout>
