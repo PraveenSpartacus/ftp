@@ -66,7 +66,7 @@ export class Buttons extends Component {
             }
         })
         //this.props.filterCards('networks');
-        scrollTo('#NETWORKS')
+        scrollTo('#BUSINESS')
     }
 
     setProductivity = () =>{
@@ -255,7 +255,7 @@ export class Buttons extends Component {
                     EDUCATION
                 </button>
                 <button className={this.state.active.networks ? style.activeBtn : style.btn} onClick={this.setNetworks}>
-                    BUSSINESS
+                    BUSINESS
                 </button>
                 <button className={this.state.active.productivity ? style.activeBtn : style.btn} onClick={this.setProductivity}>
                     PRODUCTIVITY

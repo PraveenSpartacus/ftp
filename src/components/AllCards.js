@@ -115,6 +115,36 @@ const AllCards = () =>{
         img: 'linuxacademy',
         days: '7 days'
       },
+      {
+        id: 18,
+        title: 'education',
+        img: 'truefire',
+        days: '30 days'
+      },
+      {
+        id: 19,
+        title: 'education',
+        img: 'guitarinstructor',
+        days: '7 days'
+      },
+      {
+        id: 20,
+        title: 'education',
+        img: 'guitartricks',
+        days: '14 days'
+      },
+      {
+        id: 21,
+        title: 'education',
+        img: 'fenderplay',
+        days: '14 days'
+      },
+      {
+        id: 22,
+        title: 'education',
+        img: 'guitargate',
+        days: '3 days'
+      },
     ]
 
     // let networksCards = props.Cards.filter(
@@ -168,7 +198,31 @@ const AllCards = () =>{
           title: 'networks',
           img: 'zoho',
           days: '14 days'
-        }
+        },
+        {
+          id: 14,
+          title: 'accounting',
+          img: 'zarmoney',
+          days: '30 days'
+        },
+        {
+          id: 15,
+          title: 'accounting',
+          img: 'xero',
+          days: '30 days'
+        },
+        {
+          id: 16,
+          title: 'accounting',
+          img: 'sage',
+          days: '30 days'
+        },
+        {
+          id: 17,
+          title: 'accounting',
+          img: 'patriot',
+          days: '30 days'
+        },
     ]
 
     // let emailCards = props.Cards.filter(
@@ -180,38 +234,7 @@ const AllCards = () =>{
     //     }
     // )
 
-    let emailCards = [
-        {
-            id: 11,
-            title: 'email',
-            img: 'sendinblue',
-            days: "na"
-          },
-          {
-            id: 12,
-            title: 'email',
-            img: 'constantcontact',
-            days: '30 days'
-          },
-          {
-            id: 13,
-            title: 'email',
-            img: 'benchmark',
-            days: '30 days'
-          },
-          {
-            id: 14,
-            title: 'email',
-            img: 'activecampaign',
-            days: '30 days'
-          },
-          {
-           id: 15,
-           title: 'email',
-           img: 'mailchimp',
-           days: '30 days'
-         },
-    ]
+    
 
 
     let productivityCards = [
@@ -243,7 +266,7 @@ const AllCards = () =>{
             id: 5,
             title: 'productivity',
             img: 'monday',
-            days: 'na'
+            days: '14'
           },
           {
             id: 6,
@@ -275,34 +298,58 @@ const AllCards = () =>{
             img: 'office365',
             days: '30 days'
           },
+          {
+            id: 11,
+            title: 'productivity',
+            img: 'sendinblue',
+            days: "na"
+          },
+          {
+            id: 12,
+            title: 'productivity',
+            img: 'constantcontact',
+            days: '30 days'
+          },
+          {
+            id: 13,
+            title: 'productivity',
+            img: 'benchmark',
+            days: '30 days'
+          },
+          
+          {
+           id: 15,
+           title: 'productivity',
+           img: 'mailchimp',
+           days: '30 days'
+         },
+         {
+          id: 16,
+          title: 'productivity',
+          img: 'egnyte',
+          days: '15 days'
+         },
+         {
+          id: 17,
+          title: 'productivity',
+          img: 'sugarsync',
+          days: '30 days'
+         },
+         {
+          id: 18,
+          title: 'productivity',
+          img: 'backblaze',
+          days: '15 days'
+         },
+         {
+          id: 19,
+          title: 'productivity',
+          img: 'carbonite',
+          days: '15 days'
+         },
     ]
 
-    let musicCards = [
-        {
-            id: 1,
-            title: 'music',
-            img: 'applemusic',
-            days: '90 days'
-        },
-        {
-            id: 2,
-            title: 'music',
-            img: 'spotify',
-            days: '30 days'
-        },
-        {
-            id: 3,
-            title: 'music',
-            img: 'tidal',
-            days: '30 days'
-        },
-        {
-            id: 4,
-            title: 'music',
-            img: 'amazonmusic',
-            days: '30 days'
-        },
-    ]
+    
 
     let entertainmentCards = [
         {
@@ -353,6 +400,55 @@ const AllCards = () =>{
         img: 'crunchyroll',
         days: '14 days'
     },
+    {
+      id: 9,
+      title: 'music',
+      img: 'applemusic',
+      days: '90 days'
+  },
+  {
+      id: 10,
+      title: 'music',
+      img: 'spotify',
+      days: '30 days'
+  },
+  {
+      id: 11,
+      title: 'music',
+      img: 'tidal',
+      days: '30 days'
+  },
+  {
+      id: 12,
+      title: 'music',
+      img: 'amazonmusic',
+      days: '30 days'
+  },
+  {
+    id: 13,
+    title: 'entertainment',
+    img: 'showtime',
+    days: '7 days'
+  },
+  {
+    id: 14,
+    title: 'entertainment',
+    img: 'viki',
+    days: '7 days'
+  },
+  {
+    id: 15,
+    title: 'entertainment',
+    img: 'fubotv',
+    days: '7 days'
+  },
+  {
+    id: 16,
+    title: 'entertainment',
+    img: 'starz',
+    days: '7 days'
+  },
+  
     ]
 
     let booksCards = [
@@ -400,6 +496,90 @@ const AllCards = () =>{
         },
     ]
 
+    let marketingCards = [
+      {
+        id: 1,
+        title: 'marketing',
+        img: 'constantcontact',
+        days: '60 days'
+      },
+      {
+        id: 2,
+        title: 'marketing',
+        img: 'activecampaign',
+        days: '14 days'
+      },
+      {
+        id: 3,
+        title: 'marketing',
+        img: 'getresponse',
+        days: '30 days'
+      },
+      {
+        id: 4,
+        title: 'marketing',
+        img: 'mailigen',
+        days: '30 days'
+      },
+      {
+        id: 5,
+        title: 'marketing',
+        img: 'pinpointe',
+        days: '15 days'
+      },
+      {
+        id: 6,
+        title: 'marketing',
+        img: 'aweber',
+        days: '30 days'
+      },
+      {
+        id: 7,
+        title: 'marketing',
+        img: 'campaigner',
+        days: '30 days'
+      },
+    ]
+
+    let appsCards = [
+      {
+        id: 1,
+        title: 'apps',
+        img: 'pandasecurity',
+        days: '30 days'
+      },
+      {
+        id: 2,
+        title: 'apps',
+        img: 'bullguard',
+        days: '30 days'
+      },
+      {
+        id: 3,
+        title: 'apps',
+        img: 'kaspersky',
+        days: '30 days'
+      },
+      {
+        id: 4,
+        title: 'apps',
+        img: 'norton',
+        days: '30 days'
+      },
+      {
+        id: 5,
+        title: 'apps',
+        img: 'mcafee',
+        days: '30 days'
+      },
+      {
+        id: 6,
+        title: 'apps',
+        img: 'webroot',
+        days: '14 days'
+      },
+    ]
+
     //let dummyCards = dummyCards1.slice(0,10)
     //let dummyCards2 = dummyCards1.slice(0,7)
 
@@ -410,14 +590,18 @@ const AllCards = () =>{
     return(
         <div style={w90}>
             <MobileLayout cards={educationCards} title='EDUCATION'></MobileLayout>
-            <MobileLayout cards={networksCards} title='NETWORKS'></MobileLayout>
+            <MobileLayout cards={networksCards} title='BUSINESS'></MobileLayout>
             <MobileLayout cards={productivityCards} title='PRODUCTIVITY'></MobileLayout>
-            <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout>
+            {/* <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout> */}
             <MobileLayout cards={entertainmentCards} title='ENTERTAINMENT'></MobileLayout>
             <MobileLayout cards={booksCards} title='BOOKS'></MobileLayout>
+            <MobileLayout cards={marketingCards} title='MARKETING'></MobileLayout>
+            <MobileLayout cards={appsCards} title='APPS'></MobileLayout>
 
 
-            <MobileLayout cards={emailCards} title='EMAIL'></MobileLayout>
+
+
+            {/* <MobileLayout cards={emailCards} title='EMAIL'></MobileLayout> */}
             {/* <MobileLayout cards={dummyCards2} title='dummy'></MobileLayout>
             <MobileLayout cards={dummyCards} title='dummy'></MobileLayout>
             <MobileLayout cards={dummyCards1} title='dummy'></MobileLayout> */}

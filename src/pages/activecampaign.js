@@ -39,7 +39,7 @@ const productPage = () =>{
             <div className={style.pageContent}>
                 <img className={style.img} src={Img}></img>
                 <h4>
-                Offer - 10 Day Free Trial
+                Offer - 14 Day Free Trial
                 </h4>
                 <h3>
                 Do more than automate your email — activate your entire customer experience.           

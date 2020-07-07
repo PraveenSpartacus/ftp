@@ -39,7 +39,7 @@ const productPage = () =>{
             <div className={style.pageContent}>
                 <img className={style.img} src={Img}></img>
                 <h4>
-                Offer - 10 Day Free Trial
+                Offer - 60 Day Free Trial
                 </h4>
                 <h3>
                 Powerful email marketing made easy.                
