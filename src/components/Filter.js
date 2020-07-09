@@ -81,7 +81,7 @@ export class Filter extends Component {
         music: false,
      }
     })
-    scrollTo("#NETWORKS")
+    scrollTo("#BUSINESS")
   }
   setEmail = () =>{
     this.setState({
@@ -259,15 +259,17 @@ export class Filter extends Component {
                 <div className={style.modalList}>
 
                 <h4 className={`${this.state.options.education ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEducation}>Education</h4>
-                <h4 className={`${this.state.options.networks ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetworks}>Networks</h4>
-                <h4 className={`${this.state.options.email ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEmail}>Email</h4>
-                <h4 className={`${this.state.options.productivity ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setProductivity}>Productivity</h4>
                 <h4 className={`${this.state.options.entertainment ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEntertainment}>Entertainment</h4>
-                <h4 className={`${this.state.options.design ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setDesign}>Design</h4>
+
+                <h4 className={`${this.state.options.networks ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setNetworks}>Business</h4>
+                {/* <h4 className={`${this.state.options.email ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setEmail}>Email</h4> */}
+                {/* <h4 className={`${this.state.options.design ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setDesign}>Design</h4> */}
                 <h4 className={`${this.state.options.books ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setBooks}>Books</h4>
                 <h4 className={`${this.state.options.apps ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setApps}>Apps</h4>
                 <h4 className={`${this.state.options.marketing ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setMarketing}>Marketing</h4>
-                <h4 className={`${this.state.options.music ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setMusic}>Music</h4>
+                <h4 className={`${this.state.options.productivity ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setProductivity}>Productivity</h4>
+
+                {/* <h4 className={`${this.state.options.music ? style.selected : style.normal}`} ref={this.optionRef} onClick={this.setMusic}>Music</h4> */}
 
 
                 

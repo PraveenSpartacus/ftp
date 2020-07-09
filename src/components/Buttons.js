@@ -254,17 +254,11 @@ export class Buttons extends Component {
                 <button className={this.state.active.education ? style.activeBtn : style.btn} onClick={this.setEducation}>
                     EDUCATION
                 </button>
-                <button className={this.state.active.networks ? style.activeBtn : style.btn} onClick={this.setNetworks}>
-                    BUSINESS
-                </button>
-                <button className={this.state.active.productivity ? style.activeBtn : style.btn} onClick={this.setProductivity}>
-                    PRODUCTIVITY
-                </button>
                 <button className={this.state.active.entertainment ? style.activeBtn : style.btn} onClick={this.setEntertainment}>
                     ENTERTAINMENT
                 </button>
-                <button className={this.state.active.design ? style.activeBtn : style.btn} onClick={this.setDesign}>
-                    DESIGN
+                <button className={this.state.active.networks ? style.activeBtn : style.btn} onClick={this.setNetworks}>
+                    BUSINESS
                 </button>
                 <button className={this.state.active.books ? style.activeBtn : style.btn} onClick={this.setBooks}>
                     BOOKS
@@ -275,12 +269,20 @@ export class Buttons extends Component {
                 <button className={this.state.active.marketing ? style.activeBtn : style.btn} onClick={this.setMarketing}>
                     MARKETING
                 </button>
-                <button className={this.state.active.music ? style.activeBtn : style.btn} onClick={this.setMusic}>
+                <button className={this.state.active.productivity ? style.activeBtn : style.btn} onClick={this.setProductivity}>
+                    PRODUCTIVITY
+                </button>
+                
+                {/* <button className={this.state.active.design ? style.activeBtn : style.btn} onClick={this.setDesign}>
+                    DESIGN
+                </button> */}
+                
+                {/* <button className={this.state.active.music ? style.activeBtn : style.btn} onClick={this.setMusic}>
                     MUSIC
                 </button>
                 <button className={this.state.active.email ? style.activeBtn : style.btn} onClick={this.setEmail}>
                     EMAIL
-                </button>
+                </button> */}
             </div>
         )
     }

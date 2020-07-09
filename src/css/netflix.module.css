@@ -39,7 +39,7 @@
     /* padding: 20px 85px; */
     padding: clamp(15px, 1.72vw, 20px) clamp(60px, 6.89vw, 85px); /* minimum values will be activated at 870px*/
     /* margin: 70px 0; */
-    margin: clamp(55px, 6.32vw, 70px) 0;
+    margin: clamp(55px, 6.32vw, 70px) 0; 
     border: none;
     outline: none;
     cursor: pointer;
@@ -49,6 +49,8 @@
         6px 6px 10px rgba(0,0,0,0.05),
         -6px -6px 10px rgba(255,255,255,0.65);
 }
+
+
 
 .page-content button:hover{
     transform: scale(1.1);
@@ -73,7 +75,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    width: 85%;
+    width: 100%;
+    
 }
 .related img{
     /* height: 38px; */
@@ -132,5 +135,15 @@
     }
     .page-content h2{
         font-size: clamp(23px,5.6vw,28px);
+    }
+    .page-content>a{
+        /* background-color: red; */
+        width: fit-content;
+        height: fit-content;
+        /* */
+        margin: clamp(55px, 6.32vw, 70px) 0; 
+    }
+    .page-content button{
+        margin: 0;
     }
 }

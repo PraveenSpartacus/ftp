@@ -1,6 +1,7 @@
 import React from 'react'
 //import Card from './Card'
 import MobileLayout from './MobileLayout'
+import style from '../css/AllCards.module.css'
 
 const AllCards = () =>{
     //let x = props.Cards
@@ -112,8 +113,8 @@ const AllCards = () =>{
       {
         id: 17,
         title: 'education',
-        img: 'linuxacademy',
-        days: '7 days'
+        img: 'packtpub',
+        days: '10 days'
       },
       {
         id: 18,
@@ -145,6 +146,7 @@ const AllCards = () =>{
         img: 'guitargate',
         days: '3 days'
       },
+      
     ]
 
     // let networksCards = props.Cards.filter(
@@ -157,30 +159,30 @@ const AllCards = () =>{
     // )
 
     let networksCards = [
-        {
-            id: 7,
-            title: 'networks',
-            img: 'shareasale',
-            days: 'sh'
-          },
-          {
-            id: 8,
-            title: 'networks',
-            img: 'impactradius',
-            days: 'im'
-         },
-         {
-           id: 9,
-           title: 'networks',
-           img: 'viglink',
-           days: 'vig'
-         },
-         {
-           id: 10,
-           title: 'networks',
-           img: 'cjaffiliate',
-           days: 'cj'
-         },
+        // {
+        //     id: 7,
+        //     title: 'networks',
+        //     img: 'shareasale',
+        //     days: 'sh'
+        //   },
+        //   {
+        //     id: 8,
+        //     title: 'networks',
+        //     img: 'impactradius',
+        //     days: 'im'
+        //  },
+        //  {
+        //    id: 9,
+        //    title: 'networks',
+        //    img: 'viglink',
+        //    days: 'vig'
+        //  },
+        //  {
+        //    id: 10,
+        //    title: 'networks',
+        //    img: 'cjaffiliate',
+        //    days: 'cj'
+        //  },
          {
           id: 11,
           title: 'networks',
@@ -248,7 +250,7 @@ const AllCards = () =>{
             id: 2,
             title: 'productivity',
             img: 'todoist',
-            days: 'na'
+            days: '30 days'
           },
           {
             id: 3,
@@ -260,13 +262,13 @@ const AllCards = () =>{
             id: 4,
             title: 'productivity',
             img: 'asana',
-            days: 'na'
+            days: '30 days'
           },
           {
             id: 5,
             title: 'productivity',
             img: 'monday',
-            days: '14'
+            days: '14 days'
           },
           {
             id: 6,
@@ -278,7 +280,7 @@ const AllCards = () =>{
             id: 7,
             title: 'productivity',
             img: 'trello',
-            days: 'na'
+            days: '14 days'
           },
           {
             id: 8,
@@ -304,24 +306,19 @@ const AllCards = () =>{
             img: 'sendinblue',
             days: "na"
           },
-          {
-            id: 12,
-            title: 'productivity',
-            img: 'constantcontact',
-            days: '30 days'
-          },
+          
           {
             id: 13,
             title: 'productivity',
             img: 'benchmark',
-            days: '30 days'
+            days: 'na'
           },
           
           {
            id: 15,
            title: 'productivity',
            img: 'mailchimp',
-           days: '30 days'
+           days: 'na'
          },
          {
           id: 16,
@@ -590,13 +587,17 @@ const AllCards = () =>{
     return(
         <div style={w90}>
             <MobileLayout cards={educationCards} title='EDUCATION'></MobileLayout>
-            <MobileLayout cards={networksCards} title='BUSINESS'></MobileLayout>
-            <MobileLayout cards={productivityCards} title='PRODUCTIVITY'></MobileLayout>
-            {/* <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout> */}
             <MobileLayout cards={entertainmentCards} title='ENTERTAINMENT'></MobileLayout>
+
+            <MobileLayout cards={networksCards} title='BUSINESS'></MobileLayout>
+            {/* <MobileLayout cards={musicCards} title='MUSIC'></MobileLayout> */}
             <MobileLayout cards={booksCards} title='BOOKS'></MobileLayout>
-            <MobileLayout cards={marketingCards} title='MARKETING'></MobileLayout>
             <MobileLayout cards={appsCards} title='APPS'></MobileLayout>
+
+            <MobileLayout cards={marketingCards} title='MARKETING'></MobileLayout>
+            <MobileLayout cards={productivityCards} title='PRODUCTIVITY'></MobileLayout>
+            <div className={style.space}></div>
+
 
 
 

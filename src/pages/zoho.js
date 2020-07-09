@@ -7,12 +7,12 @@ import style from '../css/netflix.module.css'
 import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
-
-let link = 'https://www.udemy.com/'
+import quickbooks from '../images/quickbooks.svg'
+import freshbooks from '../images/freshbooks.svg'
+import sage from '../images/sage.svg'
+import xero from '../images/xero.svg'
+import zarmoney from '../images/zarmoney.svg'
+let link = 'https://www.zoho.com/'
 
 
 const productPage = () =>{
@@ -38,7 +38,7 @@ const productPage = () =>{
             <div className={style.pageContent}>
                 <img className={style.img} src={Img}></img>
                 <h4>
-                Offer - 14 Day Free Trial
+                Offer - 30 Day Free Trial
                 </h4>
                 <h3>
                 Online GST accounting software, built for your business.               
@@ -50,11 +50,12 @@ const productPage = () =>{
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/quickbooks"><img src={quickbooks} alt="img"></img></Link>
+                    <Link to="/freshbooks"><img src={freshbooks} alt="img"></img></Link>
+                    <Link to="/sage"><img src={sage} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/xero"><img src={xero} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/zarmoney"><img src={zarmoney} alt="img"></img></Link>
+                    
                 </div>
             </div>
 

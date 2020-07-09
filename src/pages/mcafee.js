@@ -8,12 +8,13 @@ import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
+import pandasecurity from '../images/pandasecurity.svg'
+import bullguard from '../images/bullguard.svg'
+import kaspersky from '../images/kaspersky.svg'
+import norton from '../images/norton.svg'
+import webroot from '../images/webroot.svg'
 
-let link = `https://www.udemy.com/`
+let link = `https://www.mcafee.com/`
 
 
 const productPage = () =>{
@@ -53,11 +54,12 @@ const productPage = () =>{
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/pandasecurity"><img src={pandasecurity} alt="img"></img></Link>
+                    <Link to="/bullguard"><img src={bullguard} alt="img"></img></Link>
+                    <Link to="/kaspersky"><img src={kaspersky} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/norton"><img src={norton} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/webroot"><img src={webroot} alt="img"></img></Link>
+                    
                 </div>
             </div>
 

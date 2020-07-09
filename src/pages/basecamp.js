@@ -8,12 +8,13 @@ import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
+import asana from '../images/asana.svg'
+import egnyte from '../images/egnyte.svg'
+import sugarsync from '../images/sugarsync.svg'
+import backblaze from '../images/backblaze.svg'
+import monday from '../images/monday.svg'
 
-let link = `https://www.udemy.com/`
+let link = `https://www.basecamp.com/`
 
 
 const productPage = () =>{
@@ -39,7 +40,7 @@ const productPage = () =>{
             <div className={style.pageContent}>
                 <img className={style.img} src={Img}></img>
                 <h4>
-                Offer - 10 Day Free Trial
+                Offer - 30 Day Free Trial
                 </h4>
                 <h3>
                 Basecamp is the premier project management + internal communication tool for remote WFH teams worldwide.
@@ -51,11 +52,12 @@ const productPage = () =>{
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/asana"><img src={asana} alt="img"></img></Link>
+                    <Link to="/egnyte"><img src={egnyte} alt="img"></img></Link>
+                    <Link to="/sugarsync"><img src={sugarsync} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/backblaze"><img src={backblaze} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/monday"><img src={monday} alt="img"></img></Link>
+                    
                 </div>
             </div>
 

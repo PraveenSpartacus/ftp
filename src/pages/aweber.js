@@ -8,12 +8,12 @@ import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
-
-let link = `https://www.udemy.com/`
+import activecampaign from '../images/activecampaign.svg'
+import getresponse from '../images/getresponse.svg'
+import constantcontact from '../images/constantcontact.svg'
+import pinpointe from '../images/pinpointe.svg'
+import mailigen from '../images/mailigen.svg'
+let link = `https://www.aweber.com/`
 
 
 const productPage = () =>{
@@ -51,11 +51,12 @@ const productPage = () =>{
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/activecampaign"><img src={activecampaign} alt="img"></img></Link>
+                    <Link to="/getresponse"><img src={getresponse} alt="img"></img></Link>
+                    <Link to="/constantcontact"><img src={constantcontact} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/pinpointe"><img src={pinpointe} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/mailigen"><img src={mailigen} alt="img"></img></Link>
+                    
                 </div>
             </div>
 

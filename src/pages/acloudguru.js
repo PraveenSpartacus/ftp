@@ -8,12 +8,13 @@ import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
+import udemy from '../images/udemy.svg'
+import coursera from '../images/coursera.svg'
+import pluralsight from '../images/pluralsight.svg'
+import codecademy from '../images/codecademy.svg'
+import guitartricks from '../images/guitartricks.svg'
 
-let link = `https://www.udemy.com/`
+let link = `https://acloud.guru/`
 
 
 const productPage = () =>{
@@ -39,25 +40,26 @@ const productPage = () =>{
             <div className={style.pageContent}>
                 <img className={style.img} src={Img}></img>
                 <h4>
-                Offer - 10 Day Free Trial
+                Offer - 7 Day Free Trial
                 </h4>
                 <h3>
                 Learn modern tech skills with unlimited training in AWS, Azure, and Google Cloud.
 
 
                 </h3>
-                <a href={link} target="_blank"><button>Get the Offer</button></a>
+                <a href={link}  target="_blank"><button>Get the Offer</button></a>
                 <h2>
                     Related Services
                 </h2>
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/udemy"><img src={udemy} alt="img"></img></Link>
+                    <Link to="/coursera"><img src={coursera} alt="img"></img></Link>
+                    <Link to="/pluralsight"><img src={pluralsight} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/codecademy"><img src={codecademy} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/guitartricks"><img src={guitartricks} alt="img"></img></Link>
+                    
                 </div>
             </div>
 

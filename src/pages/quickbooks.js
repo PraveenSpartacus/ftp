@@ -8,10 +8,11 @@ import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
+import freshbooks from '../images/freshbooks.svg'
+import zoho from '../images/zoho.svg'
+import sage from '../images/sage.svg'
+import xero from '../images/xero.svg'
+import zarmoney from '../images/zarmoney.svg'
 
 let link = 'https://quickbooks.intuit.com/#'
 
@@ -51,11 +52,12 @@ const productPage = () =>{
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/freshbooks"><img src={freshbooks} alt="img"></img></Link>
+                    <Link to="/zoho"><img src={zoho} alt="img"></img></Link>
+                    <Link to="/sage"><img src={sage} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/xero"><img src={xero} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/zarmoney"><img src={zarmoney} alt="img"></img></Link>
+                    
                 </div>
             </div>
 

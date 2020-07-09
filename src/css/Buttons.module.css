@@ -1,20 +1,23 @@
 .button-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /* background-color: aliceblue; */
     /* border: rgb(0, 0, 0) 2px solid; */
     /* height: fit-content; */
     height: 100vh;
     width: 20%;
+    max-height: 1080px;
     /* min-height: 560px;
     max-height: 800px; */
     position: sticky;
     top: 0px;
 }
 .button-container button{
-    transition: box-shadow 0.4s;
+    margin: 25px 0;
 }
+
+
 
 /* .btn{
     box-shadow:

@@ -8,12 +8,14 @@ import {Link} from 'gatsby'
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-import disney from '../images/disney.svg'
-import prime from '../images/prime.svg'
-import hulu from '../images/hulu.svg'
-import hbo from '../images/hbo.svg'
+import blinkist from '../images/blinkist.svg'
+import kobo from '../images/kobo.svg'
+import playster from '../images/playster.svg'
+import scribd from '../images/scribd.svg'
+import audible from '../images/audible.svg'
 
-let link = `https://www.udemy.com/`
+
+let link = `https://www.amazon.com/Kindle-eBooks/b?ie=UTF8&node=154606011`
 
 
 const productPage = () =>{
@@ -51,11 +53,11 @@ const productPage = () =>{
                 <div className={style.line}></div>
 
                 <div className={style.related}> 
-                    <Link to="/"><img src={disney} alt="img"></img></Link>
-                    <Link to="/"><img src={hbo} alt="img"></img></Link>
-                    <Link to="/"><img src={prime} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hulu} alt="img"></img></Link>
-                    <Link className={style.notVisible} to="/"><img src={hbo} alt="img"></img></Link>
+                    <Link to="/blinkist"><img src={blinkist} alt="img"></img></Link>
+                    <Link to="/kobo"><img src={kobo} alt="img"></img></Link>
+                    <Link to="/scribd"><img src={scribd} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/playster"><img src={playster} alt="img"></img></Link>
+                    <Link className={style.notVisible} to="/audible"><img src={audible} alt="img"></img></Link>
                 </div>
             </div>
 
